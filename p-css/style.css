@@ -1,0 +1,328 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 4rem;
+    background-color: rgba(0, 0, 0, 0.832);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    border-bottom: .2rem solid rgb(131, 0, 0);
+}
+
+.brand {
+    cursor: pointer;
+}
+
+.brand:hover {
+    opacity: 80%;
+}
+
+.brand h1 {
+    font-weight: bold;
+    color: white;
+}
+
+.brand h1 span {
+    color: rgb(191, 0, 0);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.2rem;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: yellow;
+    transition: .3s;
+}
+
+nav .active {
+    background-color: rgb(191, 0, 0);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background-color: rgb(191, 0, 0);
+    display: flex;
+    padding-top: 1.3rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    justify-content: space-between;
+}
+
+.hero .text-container {
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.hero .text-container h1 {
+    font-size: 3rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button a:hover {
+    box-shadow: .3rem .3rem .3rem rgb(131, 0, 0);
+}
+
+.button a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(191, 0, 0);
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: .4rem;
+}
+
+.button a span {
+    color: white;
+    display: flex;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.img-container img {
+    width: 30rem;
+}
+
+/* About */
+.about .pendahuluan {
+    display: flex;
+    flex-direction: row;
+    border-top: .4rem solid black;
+    border-bottom: .4rem solid black;
+}
+
+.about .image {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 26rem;
+    background: rgb(56, 56, 56);
+    justify-content: center;
+}
+
+.about .image img {
+    width: 18rem;
+    padding: 1rem;
+    margin-right: 3rem;
+}
+
+.about .text {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: black;
+    height: 26rem;
+}
+
+.about .text-box {
+    background: rgb(191,0,0);
+    color: white;
+    padding: 1rem;
+    box-shadow: .3rem .3rem .3rem yellow;
+    border: .1rem solid yellow;
+}
+
+.about .referensi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 4rem;
+    background-color: rgb(191, 0, 0);
+    border-bottom: .3rem solid black;
+}
+
+.about .referensi .title, .contact .title,
+.about .pembelajaran .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.about .referensi .title small,
+.about .pembelajaran .title small,
+.contact .title small {
+    color: yellow;
+}
+
+.about .referensi .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 4rem;
+}
+
+.about .referensi .content .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    color: white;
+}
+
+.about .referensi .content .card video {
+    box-shadow: .3rem .3rem .3rem yellow;
+    border: 3rem solid yellow;
+}
+
+.about .referensi .content .card .text-card {
+    background-color: black;
+    padding: .5rem;
+    box-shadow: .3rem .3rem .3rem yellow;
+    border: .1rem solid yellow;
+}
+
+.about .referensi .content .card .text-card p {
+    color: yellow;
+}
+
+.about .referensi .content .card .text-card h3 {
+    padding: .6rem;
+}
+
+.about .pembelajaran {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.3rem 4rem;
+    padding-bottom: 8rem;
+    background-color: rgb(56, 56, 56);
+}
+
+.about .pembelajaran .img-alur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about .pembelajaran .img-alur img {
+    box-shadow: .3rem .3rem .3rem rgb(191, 0, 0);
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+    padding-bottom: 2rem;
+    background: rgb(191, 0, 0);
+    border-top: .3rem solid black;
+    flex-direction: column;
+}
+
+.contact .title {
+    margin: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.wrap-ct {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.53);
+    padding: 1rem;
+    width: 20rem;
+    box-shadow: .3rem .3rem .3rem rgb(131, 0, 0);
+    gap: .7rem;
+}
+
+.nama, .email, .pesan {
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    gap: .3rem;
+}
+
+form input:focus, textarea:focus {
+    box-shadow: .3rem .3rem .3rem yellow;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+    color: yellow;
+    font-size: 1.2rem;
+    border-top: .3rem solid rgb(191, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style tipis */
+
+div img {
+    width: 30%;
+}
