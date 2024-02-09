@@ -293,6 +293,31 @@ form input:focus, textarea:focus {
     box-shadow: .3rem .3rem .3rem yellow;
 }
 
+/* Back beranda */
+.beranda {
+    display: flex;
+    background-color: rgb(191, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.beranda a {
+    text-decoration: none;
+}
+
+.beranda h2 span {
+    color: white;
+}
+
+.beranda h2 {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: rgb(131, 0, 0);
+    border: .2rem solid yellow;
+    color: yellow;
+}
+
 /* Footer */
 footer {
     display: flex;
